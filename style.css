@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.sky{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(2076.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+
+.building{
+    width: 300vw;
+    height: 100vh;
+    background-image: url(buildings.png);
+    position: absolute;
+    top: 129px;
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-repeat-y: no-repeat;
+    animation: buildingmove linear 4s infinite;
+}
+    
+
+.road{
+    width: 500vw;
+    height: 100vh;
+    background-image: url(pngwing.com\ \(2\).png);
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    position: absolute;
+    top: 511px;
+    animation: roadmove linear 3s infinite;
+    
+}
+.clouds{
+    width: 400vw;
+    height: 65vh;
+    background-image: url(pngwing.com\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: absolute;
+    left:-511px;
+    top: 31px;
+    animation: cloudmove linear 6s infinite;
+}
+.car{
+      width: 240px;
+    height: 100px;
+    background-image: url(car.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 433px;
+    left: 300px;
+
+}
+.backwheel img{
+    width: 50px;
+    position: relative;
+    top: 40px;
+    left: 29px;
+    animation: wheelrotate linear .2s infinite;
+}
+.frontwheel img{
+    width: 40px;
+    position: relative;
+    top: -6px;
+    left:170px;
+    animation: wheelrotate linear .3s infinite;
+    
+}
+@keyframes wheelrotate
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes roadmove
+{
+    100%{
+        transform: translateX(-200vw);
+    }
+}
+@keyframes buildingmove
+{
+    100%{
+        transform: translateX(-200vw);
+    }
+}
+@keyframes cloudmove
+{
+    100%{
+        transform: translateX(-200vw);
+    }
+}
